@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body { overflow-x: hidden; }
+
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("fontes/BebasNeue-Regular.otf");
+	src:
+	url("fontes/bebasneue-regular-webfont.woff") format("woff"),
+	url("fontes/BebasNeue-Regular.otf") format("opentype"),
+	}
+
+
+
+.header{
+	/* background-color: #56c02b; */
+	display: flex;
+	
+	background-color: #56c02b;
+}
+
+.header .conteudocbcl {
+	padding-top: 8rem;
+	padding-left: 2rem;
+	text-align: center;
+	float: left;
+}
+
+.header .textoinicio {
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+	margin-bottom: 1rem;
+	color: #fff;
+	font-size: 2.5rem;
+    line-height: 3rem;
+	padding-right: 33rem;
+}
+
+.header .p-large {
+	margin-bottom: 3rem;
+    color: #f3f7fd;
+    line-height: 1rem;
+    padding-right: 65%;
+}
+
+
+.header .textolado{
+	display: flex;	
+	padding-top: 10rem;
+	margin-right: 2rem;
+	padding-right: 3rem;
+	font-size: 1.3rem;
+	color: #f3f7fd;
+
+}
+
+
+.ondinhass {
+	margin-top: -1px; /* To remove white margin in FF */
+	width: 100%;
+	height: 5rem;
+	display: flex;
+}
+
+
+/* Conteudo do meio do site */
+.textinho h1{
+	font-family: 'Bebas Neue', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	text-align: center;
+	font-size: 3rem;
+	color: #56c02b;
+}
+
+.textinho p{
+	font-family: 'Bebas Neue', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	text-align: center;
+	font-size: 2rem;
+}
+
+
+.cmeio{
+	width: 1000px;
+	margin-top: 1rem;
+	margin-left: 12rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.cardcmeio{
+	position: relative;
+	margin-top: 1.5rem;
+	left: -6%;
+	width: 300px;
+	height: 370px;
+	transition: 0.3s ease-out;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+
+
+}
+
+.cardcmeio .imgBx{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.cardcmeio .imgBx img{
+
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	left: 0;
+	width: 82%;
+	height: 72%;
+	display: block;
+	transition: 0.5s;
+
+
+}
+
+.cardcmeio .conteudocmeio{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	padding: 12px;
+	background: #56c02b;
+	transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+.cardcmeio:hover .conteudocmeio{
+	width: 100%;
+	height: 75%;
+	left: 0;
+	bottom: 0;
+}
+
+.conteudocmeio p{
+	margin: 10px 0 0;
+	padding: 1em 1em;
+	transform: translateY(2em);
+	line-height: 1.3em;
+	transition: 0.3s;
+	text-align: justify;
+	opacity: 0;
+}
+
+.cardcmeio:hover .conteudocmeio p{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+h2{
+	text-align: center;
+}
+
+
+/* Rodapé */
+
+.footer {
+	padding-top: 3rem;
+	padding-bottom: 0.5rem;
+	background-color: #56c02b;
+	color: #fff;
+}
+
+.footer .footer-col {
+	margin-bottom: 2.25rem;
+}
+
+.footer p {
+	color: #f3f7fd;
+}
+
+.footer h4 {
+	margin-bottom: 0.625rem;
+	color: #fff;
+}
+
+.footer .footer-col.last .list-unstyled .fas {
+	color: #fff;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+.footer .footer-col.first {
+    margin-left: 0.8rem;
+    margin-right: 1.8rem;
+    float: left;
+}
+.footer .footer-col.last {
+    margin-right: 1.5rem;
+
+}
+
+.footer .footer-col.middle {
+    margin-left: 0.8rem;
+    margin-right: 5rem;
+    float: left;
+}
+
+
+.footer .footer-col.last .list-unstyled .media-body {
+	margin-left: 0.625rem;
+}
+
+.footer .footer-col.last .list-unstyled .fas.fa-globe {
+	margin-left: 1rem;
+	margin-right: 0.625rem;
+}
+.footer-frame {
+	height: 5rem;
+	display: flex;
+	width: 100%;
+
+}
